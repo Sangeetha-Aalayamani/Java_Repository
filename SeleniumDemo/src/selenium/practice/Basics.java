@@ -12,7 +12,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
+/**
+ * 
+ * @author user
+ *
+ */
 public class Basics {
 	
 	public static void main(String[] args) throws URISyntaxException {
@@ -45,10 +49,10 @@ public class Basics {
 		}
 		
 		// click link by text
-		//driver.findElement(By.linkText("Wikimedia Foundation")).click();
+		driver.findElement(By.linkText("Wikimedia Foundation")).click();
 		
 		// partial link text
-		//driver.findElement(By.partialLinkText("Privacy")).click();
+		driver.findElement(By.partialLinkText("Privacy")).click();
 		
 		// get domain name
 		String currentUrl=  driver.getCurrentUrl();

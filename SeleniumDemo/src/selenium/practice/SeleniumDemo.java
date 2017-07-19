@@ -1,12 +1,21 @@
 package selenium.practice;
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-
+/**
+ * 
+ * @author user
+ *
+ */
 public class SeleniumDemo {
 
 	public static void main(String[] args) {
@@ -28,14 +37,14 @@ public class SeleniumDemo {
 		element = driver.findElement(By.className("jsb"));
 		element.click();
 		
-		//File inputFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File inputFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		
 		try {			
 			//capture screenshot
-			//FileUtils.copyFile(inputFile, new File("d://picts/God's Love.jpg"));
+			FileUtils.copyFile(inputFile, new File("d://picts/God's Love.jpg"));
 			
 			// clear the text
-			//element.clear();
+			element.clear();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

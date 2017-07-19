@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+form { 
+	display:block; 
+	background-color: #CECEEA; 
+	padding: 20px; 
+	width: 540px; 
+}
+input.text { 
+	display: block;
+ 	width: 300px; 
+	float: left; 
+}
+input.submit { 
+	margin:20px 0 0 200px; 
+	width: auto; 
+}
+label { 
+	display: inline-block; 
+	width: 200px; 
+	float: left; 
+	clear: left; 
+}
+
+</style>
+<meta charset="ISO-8859-1">
+<title>Form Test</title>
+</head>
+<body>
+	<form>
+		<div align="center">
+			<label>UserName *: </label><input type="text" name="username" /><br /> 
+			<label>Password *:</label><input type="password" name="pwd" /><br /> 
+			<label>Surname *:</label> <input type="text" name="surname" /><br /> 
+			<label>Gender*:</label> <input type="radio"name="gender" value="male" checked> Male 
+			<input type="radio" name="gender" value="female"> Female<br>
+			<label>Date of Birth *</label> <input type="date" name="dob" /><br />
+			<label>Email *:</label><input type="email" name="email" /><br />
+			<label>Hobbies *:</label>
+			<input type="checkbox" name="hobbies" value="Singing">Singing
+			<input type="checkbox" name="hobbies" value="Drawing">Drawing 
+			<input type="checkbox" name="hobbies" value="Gardening">Gardening 
+			<label>Mobile No:</label> <input type="tel" name="phoneNo" /><br />
+			<label>City:</label> 
+			<select name="city">
+				<option value="0">Chennai</option>
+				<option value="1">Mumbai</option>
+				<option value="2">Delhi</option>
+			</select><br/>
+			<label>Address *:</label> <input type="text" name="address" /><br /> 
+			<label>Pin Code *:</label> <input type="text" name="pincode" /><br /> <br/>
+			<!-- <label>Search Option: </label><input type="search" name="googlesearch"><br/>
+			<label>URL:</label><input type="url" name="homepage"> <br/> -->
+			<input type="submit" value="Submit" /> 
+			<input type="reset" value="Clear" />			
+		</div>
+	</form>
+</body>
+</html>
