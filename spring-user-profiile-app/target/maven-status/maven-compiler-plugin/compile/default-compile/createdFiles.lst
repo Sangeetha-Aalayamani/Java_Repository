@@ -1,0 +1,13 @@
+com\example\constraint\FieldMatch$List.class
+com\example\web\MainController.class
+com\example\constraint\FieldMatchValidator.class
+com\example\config\SecurityConfiguration.class
+com\example\web\UserRegistrationController.class
+com\example\web\dto\UserRegistrationDto.class
+com\example\model\Role.class
+com\example\repository\UserRepository.class
+com\example\constraint\FieldMatch.class
+com\example\service\UserServiceImpl.class
+com\example\service\UserService.class
+com\example\SpringUserProfiileAppApplication.class
+com\example\model\User.class
